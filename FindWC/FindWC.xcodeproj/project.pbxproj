@@ -68,6 +68,9 @@
 		C216AA531A0A5EC1002ADF05 /* libbaidumapapi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C216AA501A0A5EC1002ADF05 /* libbaidumapapi.a */; };
 		C216AA541A0A5EC1002ADF05 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C216AA511A0A5EC1002ADF05 /* mapapi.bundle */; };
 		C216AA551A0A5EC1002ADF05 /* 使用说明.txt in Resources */ = {isa = PBXBuildFile; fileRef = C216AA521A0A5EC1002ADF05 /* 使用说明.txt */; };
+		C25C31081A14EA9600B065AF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25C31071A14EA9600B065AF /* BaseViewController.m */; };
+		C25C310B1A14EAEC00B065AF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25C310A1A14EAEC00B065AF /* RootViewController.m */; };
+		C25C310F1A14FDD900B065AF /* BaseAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C25C310E1A14FDD800B065AF /* BaseAPIClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -248,6 +251,14 @@
 		C216AA501A0A5EC1002ADF05 /* libbaidumapapi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libbaidumapapi.a; sourceTree = "<group>"; };
 		C216AA511A0A5EC1002ADF05 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
 		C216AA521A0A5EC1002ADF05 /* 使用说明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "使用说明.txt"; sourceTree = "<group>"; };
+		C25C31051A14E91600B065AF /* Contacts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contacts.h; sourceTree = "<group>"; };
+		C25C31061A14EA9600B065AF /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		C25C31071A14EA9600B065AF /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		C25C31091A14EAEC00B065AF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		C25C310A1A14EAEC00B065AF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		C25C310C1A14ED8900B065AF /* IOANTLayoutSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOANTLayoutSize.h; sourceTree = "<group>"; };
+		C25C310D1A14FDD800B065AF /* BaseAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAPIClient.h; sourceTree = "<group>"; };
+		C25C310E1A14FDD800B065AF /* BaseAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAPIClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,6 +395,8 @@
 		C216A74B1A0A57BF002ADF05 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				C25C31091A14EAEC00B065AF /* RootViewController.h */,
+				C25C310A1A14EAEC00B065AF /* RootViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -414,6 +427,12 @@
 		C216A74F1A0A57FB002ADF05 /* base */ = {
 			isa = PBXGroup;
 			children = (
+				C25C310D1A14FDD800B065AF /* BaseAPIClient.h */,
+				C25C310E1A14FDD800B065AF /* BaseAPIClient.m */,
+				C25C31051A14E91600B065AF /* Contacts.h */,
+				C25C31061A14EA9600B065AF /* BaseViewController.h */,
+				C25C31071A14EA9600B065AF /* BaseViewController.m */,
+				C25C310C1A14ED8900B065AF /* IOANTLayoutSize.h */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -715,12 +734,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C216A9F51A0A5A10002ADF05 /* SDWebImageDecoder.m in Sources */,
+				C25C31081A14EA9600B065AF /* BaseViewController.m in Sources */,
 				C216AA001A0A5A10002ADF05 /* UIView+WebCacheOperation.m in Sources */,
 				C216A9A21A0A599C002ADF05 /* AFURLRequestSerialization.m in Sources */,
 				C216A9F81A0A5A10002ADF05 /* SDWebImageManager.m in Sources */,
 				C216A9A11A0A599C002ADF05 /* AFURLConnectionOperation.m in Sources */,
 				C216A9A01A0A599C002ADF05 /* AFSecurityPolicy.m in Sources */,
 				C216A9CE1A0A59EF002ADF05 /* UIView+MJExtension.m in Sources */,
+				C25C310B1A14EAEC00B065AF /* RootViewController.m in Sources */,
 				C216A9F41A0A5A10002ADF05 /* SDWebImageCompat.m in Sources */,
 				C216A9F71A0A5A10002ADF05 /* SDWebImageDownloaderOperation.m in Sources */,
 				C216A9B11A0A59B2002ADF05 /* FMDatabase.m in Sources */,
@@ -736,6 +757,7 @@
 				C216A9FB1A0A5A10002ADF05 /* UIImage+GIF.m in Sources */,
 				C216A9FC1A0A5A10002ADF05 /* UIImage+MultiFormat.m in Sources */,
 				C216A9A31A0A599C002ADF05 /* AFURLResponseSerialization.m in Sources */,
+				C25C310F1A14FDD900B065AF /* BaseAPIClient.m in Sources */,
 				C216A9FD1A0A5A10002ADF05 /* UIImage+WebP.m in Sources */,
 				C216A9F91A0A5A10002ADF05 /* SDWebImagePrefetcher.m in Sources */,
 				C216A9CD1A0A59EF002ADF05 /* UIScrollView+MJRefresh.m in Sources */,
@@ -964,6 +986,7 @@
 				C216A7411A0A56B8002ADF05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C216A7421A0A56B8002ADF05 /* Build configuration list for PBXNativeTarget "FindWCTests" */ = {
 			isa = XCConfigurationList;
@@ -972,6 +995,7 @@
 				C216A7441A0A56B8002ADF05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
