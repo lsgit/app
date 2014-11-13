@@ -51,13 +51,18 @@
     [_backgroudView addSubview:imageView];
     [self.view addSubview:self.backgroudView];
     CGFloat height = HEIGHT(_backgroudView) - (FRAME_Y(imageView)+HEIGHT(imageView));
+    
+    CGFloat buttonWidth = height - 10;
+    CGFloat buttonLine = (WIDTH(_backgroudView)-2*buttonWidth)/3;
+    
+    
     _findButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    _findButton.frame = CGRectMake(SCREEN_WIDTH/2-height+10, (FRAME_Y(imageView)+HEIGHT(imageView)), height-10, height-10);
+    _findButton.frame = CGRectMake(buttonLine, (FRAME_Y(imageView)+HEIGHT(imageView)), height-10, height-10);
     [_findButton setTitle:@"寻找" forState:UIControlStateNormal];
     [_findButton setBackgroundColor:[UIColor blueColor]];
     [_backgroudView addSubview:_findButton];
     _gameButton = [UIButton buttonWithType:UIButtonTypeSystem];
-    _gameButton.frame = CGRectMake(FRAME_X(_findButton)+WIDTH(_findButton)+10, (FRAME_Y(imageView)+HEIGHT(imageView)), height-10, height-10);
+    _gameButton.frame = CGRectMake(FRAME_X(_findButton)+WIDTH(_findButton)+buttonLine, (FRAME_Y(imageView)+HEIGHT(imageView)), height-10, height-10);
     [_gameButton setTitle:@"厕游" forState:UIControlStateNormal];
     [_gameButton setBackgroundColor:[UIColor redColor]];
     [_backgroudView addSubview:_gameButton];
