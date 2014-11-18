@@ -11,7 +11,7 @@
 		C216A7191A0A56B8002ADF05 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C216A7181A0A56B8002ADF05 /* CoreGraphics.framework */; };
 		C216A71B1A0A56B8002ADF05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C216A71A1A0A56B8002ADF05 /* UIKit.framework */; };
 		C216A7211A0A56B8002ADF05 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C216A71F1A0A56B8002ADF05 /* InfoPlist.strings */; };
-		C216A7231A0A56B8002ADF05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C216A7221A0A56B8002ADF05 /* main.m */; };
+		C216A7231A0A56B8002ADF05 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = C216A7221A0A56B8002ADF05 /* main.mm */; };
 		C216A7271A0A56B8002ADF05 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C216A7261A0A56B8002ADF05 /* AppDelegate.m */; };
 		C216A7291A0A56B8002ADF05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C216A7281A0A56B8002ADF05 /* Images.xcassets */; };
 		C216A7301A0A56B8002ADF05 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C216A72F1A0A56B8002ADF05 /* XCTest.framework */; };
@@ -90,7 +90,7 @@
 		C216A71A1A0A56B8002ADF05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C216A71E1A0A56B8002ADF05 /* FindWC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FindWC-Info.plist"; sourceTree = "<group>"; };
 		C216A7201A0A56B8002ADF05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C216A7221A0A56B8002ADF05 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C216A7221A0A56B8002ADF05 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		C216A7241A0A56B8002ADF05 /* FindWC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FindWC-Prefix.pch"; sourceTree = "<group>"; };
 		C216A7251A0A56B8002ADF05 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C216A7261A0A56B8002ADF05 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -350,7 +350,7 @@
 			children = (
 				C216A71E1A0A56B8002ADF05 /* FindWC-Info.plist */,
 				C216A71F1A0A56B8002ADF05 /* InfoPlist.strings */,
-				C216A7221A0A56B8002ADF05 /* main.m */,
+				C216A7221A0A56B8002ADF05 /* main.mm */,
 				C216A7241A0A56B8002ADF05 /* FindWC-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -774,7 +774,7 @@
 				C216A9B31A0A59B2002ADF05 /* FMDatabasePool.m in Sources */,
 				C216A9F31A0A5A10002ADF05 /* SDImageCache.m in Sources */,
 				C216A99F1A0A599C002ADF05 /* AFNetworkReachabilityManager.m in Sources */,
-				C216A7231A0A56B8002ADF05 /* main.m in Sources */,
+				C216A7231A0A56B8002ADF05 /* main.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

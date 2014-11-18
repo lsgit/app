@@ -14,6 +14,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    _mapManager = [[BMKMapManager alloc]init];
+    BOOL ret = [_mapManager start:@"dwAoAH5LenK5baPYnafraVqi" generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+    
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController =[[RootViewController alloc]init];
     [self.window makeKeyAndVisible];
